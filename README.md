@@ -41,7 +41,15 @@ CREATE TABLE Orders (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
-
+MySQL JDBC Driver (if using Maven, add to pom.xml)
+```
+  <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>9.1.0</version>
+        </dependency>
+```
 ## Expected Output
 
 for MAX\_ORDERS = 5 (Barista.java)
